@@ -1,0 +1,25 @@
+{
+  "name": "serverless-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "rm -rf dist && tsc --p tsconfig.json -w",
+    "build": "rm -rf dist && tsc --p tsconfig.json -d",
+    "debug": "sls offline --httpPort 4098 --stage dev --skipCacheInvalidation",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/hrz8/serverles-test"
+  },
+  "author": "Hirzi N",
+  "license": "ISC",
+  "dependencies": {
+    "aws-lambda": "^1.0.7"
+  },
+  "devDependencies": {
+    "serverless": "^2.69.0",
+    "serverless-offline": "^8.3.1"
+  }
+}
